@@ -7,5 +7,7 @@ public static void main(String[] args) {
 	WebDriver driver= new ChromeDriver();
 	driver.get("https://adactinhotelapp.com/");
 	driver.manage().window().maximize();
+	String title = driver.getTitle();
+	System.out.println(title);
 }
 }
